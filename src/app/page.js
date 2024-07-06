@@ -18,13 +18,13 @@ export default function Home() {
           </p>
           <p>Customization is at the heart of Desi Bites. We understand that everyone has their unique preferences, so we offer a variety of options to tailor each dish to your liking. Choose your preferred spice level, select the perfect portion size, and add extra ingredients to create a meal that suits your taste. Our dynamic pricing system ensures that the total price updates in real-time as you make your selections, giving you complete control over your order and budget.
           </p>
-          <p>Designed with a user-friendly interface and seamless navigation, Desi Bites provides a hassle-free ordering experience. Our app allows you to create an account to save your favorite orders, track your order history, and enjoy exclusive deals and loyalty rewards. Whether you're planning a family dinner, hosting a party, or simply craving your favorite Indian dish, Desi Bites is here to deliver a delicious and convenient dining experience, right from your smartphone.
+          <p>Designed with a user-friendly interface and seamless navigation, Desi Bites provides a hassle-free ordering experience. Our app allows you to create an account to save your favorite orders, track your order history, and enjoy exclusive deals and loyalty rewards. Whether you&apos;re planning a family dinner, hosting a party, or simply craving your favorite Indian dish, Desi Bites is here to deliver a delicious and convenient dining experience, right from your smartphone.
           </p>
         </div>
       </section>
       <section className="text-center my-8" id="contact">
         <SectionHeaders
-          subHeader={'Don\'t hesitate'}
+          subHeader={'Don&apos;t hesitate'}
           mainHeader={'Contact us'}
         />
         <div className="mt-8">
