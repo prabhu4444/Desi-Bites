@@ -28,7 +28,7 @@ export default function MenuItemsPage() {
   }
 
   return (
-    <section className="mt-8 max-w-2xl mx-auto">
+    <section className="mt-8 max-w-4xl mx-auto">
       <UserTabs isAdmin={true} />
       <div className="mt-8">
         <Link
@@ -40,7 +40,7 @@ export default function MenuItemsPage() {
       </div>
       <div>
         <h2 className="text-sm text-gray-500 mt-8">Edit menu item:</h2>
-        <div className="grid grid-cols-3 gap-2">
+        <div className="grid grid-cols-4 gap-2">
           {menuItems?.length > 0 && menuItems.map(item => (
             <Link
               key={item._id}
