@@ -1,11 +1,9 @@
 'use client';
 import {CartContext, cartProductPrice} from "@/components/AppContext";
-import Trash from "@/components/icons/Trash";
 import AddressInputs from "@/components/layout/AddressInputs";
 import SectionHeaders from "@/components/layout/SectionHeaders";
 import CartProduct from "@/components/menu/CartProduct";
 import {useProfile} from "@/components/UseProfile";
-import Image from "next/image";
 import {useContext, useEffect, useState} from "react";
 import toast from "react-hot-toast";
 
@@ -19,7 +17,7 @@ export default function CartPage() {
       if (window.location.href.includes('canceled=1')) {
         toast.error('Payment failed 😔');
       }
-    }
+    }   
   }, []);
 
   useEffect(() => {
@@ -96,6 +94,7 @@ export default function CartPage() {
               key={index}
               product={product}
               onRemove={removeCartProduct}
+              index={index}
             />
           ))}
           <div className="py-2 pr-16 flex justify-end items-center">
