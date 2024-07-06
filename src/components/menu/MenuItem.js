@@ -24,6 +24,7 @@ export default function MenuItem(menuItem) {
       return;
     }
     addToCart(menuItem, selectedSize, selectedExtras);
+    toast.success('Added to Cart')
     await new Promise(resolve => setTimeout(resolve, 1000));
     console.log('hiding popup');
     setShowPopup(false);
@@ -104,16 +105,18 @@ export default function MenuItem(menuItem) {
                   ))}
                 </div>
               )}
-                <button className="primary sticky bottom-2"
+              <div className="flex flex-row gap-2 sticky bottom-2">
+              <button className="primary "
                      onClick={handleAddToCartButtonClick}
                      type="button">
                   Add to cart ${selectedPrice}
                 </button>
               <button
-                className="mt-2"
+                className=" bg-red-300 "
                 onClick={() => setShowPopup(false)}>
                 Cancel
               </button>
+              </div>
             </div>
           </div>
         </div>
