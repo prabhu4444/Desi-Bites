@@ -35,12 +35,6 @@ export default function UserTabs({isAdmin}) {
         </>
       )}
       <Link
-            href={'/favourite'}
-            className={path === '/Favorite' ? 'active' : ''}
-          >
-            Favorite
-      </Link>
-      <Link
         className={path === '/orders' ? 'active' : ''}
         href={'/orders'}
       >
