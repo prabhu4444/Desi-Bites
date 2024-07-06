@@ -8,7 +8,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'prabhu-food-ordering.s3.amazonaws.com',
+        hostname: 'desi-bites.s3.amazonaws.com',
       },
     ]
   }
