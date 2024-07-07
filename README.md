@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Desi Bites
+
+Desi Bites is a full-stack food ordering app built with Next.js 14. The app features a robust authentication system, role-based access control, and an intuitive user interface for browsing menus, managing profiles, tracking orders, and processing payments.
+
+## Features
+
+- **Authentication:** Supports credential-based and social logins (Google, LinkedIn, GitHub) using Next.js Auth.
+- **Role-Based Access Control:** Differentiates normal users and admin with distinct functionalities.
+- **User Interface:**
+  - Browse menus categorized by type
+  - Manage profiles with photo uploads (stored in Amazon S3)
+  - Track past orders with detailed checkout bills
+  - Process payments using Stripe
+- **Admin Interface:**
+  - Manage categories and menu items with custom sizes and ingredients
+  - Assign roles and edit user details
+  - Monitor and manage all orders
+
+## Technologies Used
+
+- **Frontend:** Next.js 14, React
+- **Authentication:** Next.js Auth
+- **Storage:** Amazon S3
+- **Payment Gateway:** Stripe
+- **Database:** MongoDB atlas
+- **Hosting:** Vercel
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running, follow these simple steps.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Prerequisites
+
+- Node.js
+- npm or yarn
+
+### Installation
+
+1. Clone the repo
+```sh
+   git clone https://github.com/your-username/desi-bites.git
+```
+2. Install NPM packages
+```npm
+   npm install
+```
+3. Set up environment variables
+Create a .env file in the root directory and add the necessary environment variables.
+Run the development server
+
+```env
+MONGO_URL="mongodb+srv://your-username:your-password@cluster0.ata7hsl.mongodb.net/your-database"
+NEXTAUTH_URL="http://localhost:3000/"
+SECRET="your-secret-key"
+GOOGLE_CLIENT_ID="your-google-client-id"
+GOOGLE_CLIENT_SECRET="your-google-client-secret"
+MY_AWS_ACCESS_KEY="your-aws-access-key"
+MY_AWS_SECRET_KEY="your-aws-secret-key"
+NEXT_PUBLIC_STRIPE_PUBLIC_KEY=your-stripe-public-key
+STRIPE_SECRET_KEY=your-stripe-secret-key
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Run the development server
+```run
+npm run dev
+```
+5. Open http://localhost:3000 with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Note
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Before running the application, make sure to set up the following:
 
-## Learn More
+- **Google OAuth Setup:** Set up Google OAuth credentials for authentication.
+- **Amazon S3 Bucket:** Create an Amazon S3 bucket and configure it for image uploads.
+- **Stripe Setup:** Set up Stripe for handling payments.
 
-To learn more about Next.js, take a look at the following resources:
+Ensure all necessary environment variables are correctly set in your `.env.local` file. If this file will be committed to a version control system (like Git), consider adding it to your `.gitignore` to prevent accidental commits of sensitive information.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-## Deploy on Vercel
+### How to Contribute
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+## Contact
+
+Your Name - ([https://x.com/prabhu_4](https://x.com/prabhu_4)) - prabhusatyam4.4@gmail.com
+
+Project Link: [https://github.com/prabhu4444/desi-bites](https://github.com/prabhu4444/Desi-Bites)
+
+   
