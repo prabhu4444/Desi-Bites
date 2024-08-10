@@ -9,6 +9,9 @@
 # testing
 /coverage
 
+# Resources
+/Resources
+
 # next.js
 /.next/
 /out/

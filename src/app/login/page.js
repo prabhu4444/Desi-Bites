@@ -42,6 +42,10 @@ export default function LoginPage() {
           New to the App?{' '}
           <Link className="underline" href={'/register'}>Register here &raquo;</Link>
         </div>
+        <div className="text-center my-4 text-gray-500 border-t pt-4">
+          Forgot Your Password?{' '}
+          <Link className="underline" href={'/forgot-password'}>Set new Password &raquo;</Link>
+        </div>
       </form>
     </section>
   );

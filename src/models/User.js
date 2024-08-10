@@ -5,6 +5,8 @@ const UserSchema = new Schema({
   email: {type: String, required: true, unique: true},
   password: {type: String},
   image: {type: String},
+  resetToken: { type: String }, 
+  resetTokenExpiration: { type: Date },
 }, {timestamps: true});
 
 export const User = models?.User || model('User', UserSchema);
